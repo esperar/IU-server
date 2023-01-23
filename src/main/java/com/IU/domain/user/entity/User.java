@@ -1,15 +1,13 @@
 package com.IU.domain.user.entity;
 
 import com.IU.domain.user.entity.enum_type.Authority;
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 
-@Getter
+@Getter @Builder @Entity
+@AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-@Entity
 public class User {
 
     @Id

@@ -57,6 +57,10 @@ public class JwtTokenProvider {
         return generateToken(email, TokenType.ACCESS_TOKEN, jwtProperties.getAccessKey(), ACCESS_TOKEN_EXPIRE_TIME);
     }
 
+    public String generatedRefreshToken(String email) {
+        return generateToken(email, TokenType.REFRESH_TOKEN, jwtProperties.getRefreshKey(), REFRESH_TOKEN_EXPIRE_TIME);
+    }
+
     private Key getSignInKey(String secretKey) {
         byte[] bytes = secretKey.getBytes(StandardCharsets.UTF_8);
         return Keys.hmacShaKeyFor(bytes);

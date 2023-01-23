@@ -1,6 +1,6 @@
-package com.IU.domain.user;
+package com.IU.domain.user.entity;
 
-import com.IU.domain.user.enum_type.Authority;
+import com.IU.domain.user.entity.enum_type.Authority;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

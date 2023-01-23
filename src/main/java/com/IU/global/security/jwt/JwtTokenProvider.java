@@ -1,5 +1,6 @@
 package com.IU.global.security.jwt;
 
+import com.IU.global.error.exception.IUException;
 import com.IU.global.exception.TokenExpiredException;
 import com.IU.global.exception.TokenNotValidException;
 import com.IU.global.security.authentication.AuthDetailsService;

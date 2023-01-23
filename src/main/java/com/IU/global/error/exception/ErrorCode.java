@@ -1,8 +1,10 @@
 package com.IU.global.error.exception;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 
 @AllArgsConstructor
+@Getter
 public enum ErrorCode {
     EXPIRED_TOKEN(401,"AUTH-401-1", "Expired Token" ),
     INVALID_TOKEN(401,"AUTH-401-2","Invalid Token"),

@@ -20,7 +20,7 @@ public class GoogleAuthController {
         return queryGoogleAuthLinkService.execute();
     }
 
-    @GetMapping("/receiveCode")
+    @GetMapping("/receive-code")
     public TokenResponse googleAuthLogin(@RequestParam("code") String code) {
         return googleAuthService.execute(code);
     }
